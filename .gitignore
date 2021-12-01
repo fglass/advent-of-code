@@ -1,3 +1,6 @@
 .idea
 *.iml
 target/
+venv/
+.pytest_cache/
+.DS_Store

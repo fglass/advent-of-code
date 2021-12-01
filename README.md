@@ -3,7 +3,14 @@ An incomplete collection of unpolished solutions for the  challenges provided by
 
 ### Index
 <details>
-    <summary>2020</summary>
+    <summary>2021 (Python)</summary>
+    <ul>
+        <li><a href="2021/src/solution/day_1.py">Day 1</a></li>
+    </ul>
+</details>
+
+<details>
+    <summary>2020 (Kotlin)</summary>
     <ul>
         <li><a href="2020/src/main/kotlin/solution/Day1.kt">Day 1</a></li>
         <li><a href="2020/src/main/kotlin/solution/Day2.kt">Day 2</a></li>
@@ -24,7 +31,7 @@ An incomplete collection of unpolished solutions for the  challenges provided by
 </details>
 
 <details>
-    <summary>2019</summary>
+    <summary>2019 (Kotlin)</summary>
     <ul>
         <li><a href="2019/src/main/kotlin/solution/Day1.kt">Day 1</a></li>
         <li><a href="2019/src/main/kotlin/solution/Day2.kt">Day 2</a></li>
@@ -40,7 +47,7 @@ An incomplete collection of unpolished solutions for the  challenges provided by
 </details>
 
 <details>
-    <summary>2018</summary>
+    <summary>2018 (Kotlin)</summary>
     <ul>
         <li><a href="2018/src/main/java/solution/Day1.java">Day 1</a></li>
         <li><a href="2018/src/main/java/solution/Day2.java">Day 2</a></li>
