@@ -1,24 +1,25 @@
-from advent_helpers import load_file
+from typing import Callable
+from input_loader import load_input_sequence
 
-INPUT = load_file(day=1)
+INPUT = load_input_sequence(day=1)
 WINDOW_SIZE = 3
 
 
 def part1(measurements: list) -> int:
-    return calculate_number_of_increases(
+    return _calculate_number_of_increases(
         measurements,
         selection_strategy=lambda idx: measurements[idx]
     )
 
 
 def part2(measurements: list) -> int:
-    return calculate_number_of_increases(
+    return _calculate_number_of_increases(
         measurements,
         selection_strategy=lambda idx: sum(measurements[idx: idx + WINDOW_SIZE])
     )
 
 
-def calculate_number_of_increases(measurements: list, selection_strategy: any) -> int:
+def _calculate_number_of_increases(measurements: list, selection_strategy: Callable) -> int:
     previous = None
     increases = 0
 

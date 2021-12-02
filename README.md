@@ -6,6 +6,7 @@ An incomplete collection of unpolished solutions for the  challenges provided by
     <summary>2021 (Python)</summary>
     <ul>
         <li><a href="2021/src/solution/day_1.py">Day 1</a></li>
+        <li><a href="2021/src/solution/day_2.py">Day 2</a></li>
     </ul>
 </details>
 
@@ -47,7 +48,7 @@ An incomplete collection of unpolished solutions for the  challenges provided by
 </details>
 
 <details>
-    <summary>2018 (Kotlin)</summary>
+    <summary>2018 (Java)</summary>
     <ul>
         <li><a href="2018/src/main/java/solution/Day1.java">Day 1</a></li>
         <li><a href="2018/src/main/java/solution/Day2.java">Day 2</a></li>
