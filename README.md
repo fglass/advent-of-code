@@ -8,6 +8,7 @@ An incomplete collection of unpolished solutions for the  challenges provided by
         <li><a href="2021/src/solution/day_1.py">Day 1</a></li>
         <li><a href="2021/src/solution/day_2.py">Day 2</a></li>
         <li><a href="2021/src/solution/day_3.py">Day 3</a></li>
+        <li><a href="2021/src/solution/day_4.py">Day 4</a></li>
     </ul>
 </details>
 
