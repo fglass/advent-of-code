@@ -9,5 +9,5 @@ def test_part_1():
 
 
 def test_part_2():
-    # assert part2(EXAMPLE_INPUT) == 168
+    assert part2(EXAMPLE_INPUT) == 168
     assert part2(INPUT) == 97164301
