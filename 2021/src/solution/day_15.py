@@ -41,7 +41,7 @@ def _repeat_tile(tile: dict, scale: int) -> dict:
     return graph
 
 
-def _calculate_lowest_risk_level(graph: dict):
+def _calculate_lowest_risk_level(graph: dict) -> int:
     dimension = math.sqrt(len(graph))
     goal = (dimension - 1, dimension - 1)
     start = (0, 0)
