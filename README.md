@@ -22,6 +22,7 @@ An incomplete collection of unpolished solutions for the  challenges provided by
         <li><a href="2021/src/solution/day_15.py">Day 15</a></li>
         <li><a href="2021/src/solution/day_16.py">Day 16</a></li>
         <li><a href="2021/src/solution/day_17.py">Day 17</a></li>
+        <li><a href="2021/src/solution/day_18.py">Day 18</a></li>
     </ul>
 </details>
 
