@@ -3,6 +3,13 @@ An incomplete collection of unpolished solutions for the  challenges provided by
 
 ### Index
 <details>
+    <summary>2022 (Python)</summary>
+    <ul>
+        <li><a href="2022/src/solution/day_1.py">Day 1</a></li>
+    </ul>
+</details>
+
+<details>
     <summary>2021 (Python)</summary>
     <ul>
         <li><a href="2021/src/solution/day_1.py">Day 1</a></li>
