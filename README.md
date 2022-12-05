@@ -9,6 +9,7 @@ An incomplete collection of unpolished solutions for the  challenges provided by
         <li><a href="2022/src/solution/day_2.py">Day 2</a></li>
         <li><a href="2022/src/solution/day_3.py">Day 3</a></li>
         <li><a href="2022/src/solution/day_4.py">Day 4</a></li>
+        <li><a href="2022/src/solution/day_5.py">Day 5</a></li>
     </ul>
 </details>
 
