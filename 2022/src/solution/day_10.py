@@ -3,57 +3,50 @@ from typing import List
 
 INPUT = load_input_lines(day=10)
 TARGET_CYCLES = {20, 60, 100, 140, 180, 220}
-CRT_WIDTH = 39
-SPRITE_WIDTH = 3
+CRT_WIDTH = 40
 
 
 def part1(instructions: List[str]) -> int:
     register = cycle = 1
     signal_strength_sum = 0
 
-    for instruction in instructions:
+    def _on_cycle() -> int:
+        return cycle * register if cycle in TARGET_CYCLES else 0
 
+    for instruction in instructions:
         if instruction.startswith("addx"):
             cycle += 1
-            if cycle in TARGET_CYCLES:
-                signal_strength_sum += cycle * register
-
+            signal_strength_sum += _on_cycle()
             register += _get_value(instruction)
 
         cycle += 1
-        if cycle in TARGET_CYCLES:
-            signal_strength_sum += cycle * register
+        signal_strength_sum += _on_cycle()
 
     return signal_strength_sum
 
 
-def part2(instructions: List[str]):
-    for row in _produce_image(instructions):
-        print(" ".join(row))
-
-
-def _produce_image(instructions: List[str]) -> List[List[str]]:
+def part2(instructions: List[str]) -> List[List[str]]:
+    crt_x = 0
     register = 1
-    crt_pos = 0
-    image = [["#"]]
+    image = []
 
-    def _on_cycle(next_crt_pos: int):
-        pixel = "#" if abs(next_crt_pos - register) < SPRITE_WIDTH - 1 else "."
+    def _on_cycle() -> int:
+        if crt_x == 0:
+            image.append([])
+
+        is_lit = abs(crt_x - register) <= 1
+        pixel = "#" if is_lit else "."
         image[-1].append(pixel)
 
-        if next_crt_pos == CRT_WIDTH:
-            image.append([])
-            return -1
-
-        return next_crt_pos
+        return (crt_x + 1) % CRT_WIDTH
 
     for instruction in instructions:
-
-        if instruction.startswith("addx"):
-            crt_pos = _on_cycle(crt_pos + 1)
+        if instruction.startswith("noop"):
+            crt_x = _on_cycle()
+        elif instruction.startswith("addx"):
+            crt_x = _on_cycle()
+            crt_x = _on_cycle()
             register += _get_value(instruction)
-
-        crt_pos = _on_cycle(crt_pos + 1)
 
     return image
 
@@ -64,4 +57,5 @@ def _get_value(instruction: str) -> int:
 
 if __name__ == "__main__":
     print(f"part1={part1(INPUT)}")
-    part2(INPUT)  # Prints "BGKAEREZ"
+    for row in part2(INPUT):
+        print(" ".join(row))

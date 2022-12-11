@@ -1,7 +1,7 @@
-## advent-of-code
+# advent-of-code
 An incomplete collection of unpolished solutions for the  challenges provided by [Advent of Code](https://adventofcode.com/)
 
-### Index
+## Index
 <details>
     <summary>2022 (Python)</summary>
     <ul>
@@ -15,7 +15,8 @@ An incomplete collection of unpolished solutions for the  challenges provided by
         <li><a href="2022/src/solution/day_8.py">Day 8</a></li>
         <li><a href="2022/src/solution/day_9.py">Day 9</a></li>
         <li><a href="2022/src/solution/day_10.py">Day 10</a></li>
-    </ul>
+        <li><a href="2022/src/solution/day_11.py">Day 11</a></li>
+</ul>
 </details>
 
 <details>
