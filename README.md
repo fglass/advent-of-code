@@ -18,6 +18,7 @@ An incomplete collection of unpolished solutions for the  challenges provided by
         <li><a href="2022/src/solution/day_11.py">Day 11</a></li>
         <li><a href="2022/src/solution/day_12.py">Day 12</a></li>
         <li><a href="2022/src/solution/day_13.py">Day 13</a></li>
+        <li><a href="2022/src/solution/day_14.py">Day 14</a></li>
 </ul>
 </details>
 
